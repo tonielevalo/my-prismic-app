@@ -1,0 +1,19 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"targetDate": {
+				"__TYPE__": "FieldContent",
+				"type": "Date",
+				"value": "2018-10-02"
+			},
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "transportation",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

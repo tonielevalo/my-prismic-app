@@ -1,0 +1,29 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"backgroundColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#c41cb7",
+				"type": "Color"
+			},
+			"thickness": {
+				"__TYPE__": "FieldContent",
+				"value": "16",
+				"type": "Number"
+			},
+			"spaceAbove": {
+				"__TYPE__": "FieldContent",
+				"value": "88",
+				"type": "Number"
+			},
+			"spaceBelow": {
+				"__TYPE__": "FieldContent",
+				"value": "25",
+				"type": "Number"
+			}
+		},
+		"items": []
+	}
+]

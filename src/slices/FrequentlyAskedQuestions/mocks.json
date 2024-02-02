@@ -1,0 +1,42 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "fighting",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "slipped",
+							"type": "Text"
+						}
+					],
+					[
+						"content",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Consectetur aliqua reprehenderit fugiat eu velit pariatur nostrud aute reprehenderit ut eu consectetur reprehenderit do. Ipsum ad aliqua deserunt excepteur incididunt consequat non nulla quis nulla. Veniam aliquip aute eu ipsum labore velit commodo magna dolore consequat veniam tempor cillum deserunt officia."
+									}
+								}
+							]
+						}
+					]
+				]
+			}
+		]
+	}
+]

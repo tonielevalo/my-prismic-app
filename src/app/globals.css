@@ -105,3 +105,40 @@ a {
     color-scheme: dark;
   }
 }
+
+.block-img {
+  text-align: center;
+}
+
+.block-img img {
+  width: 25%;
+}
+
+
+.accordion {
+  margin-bottom: 20px;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-item h2 {
+  padding: 15px 20px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.accordion-item.active h2 {
+  background-color: #ddd;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 500px; /* Adjust max-height as needed */
+}

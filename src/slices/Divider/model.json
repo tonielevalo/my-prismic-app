@@ -1,0 +1,47 @@
+{
+  "id": "divider",
+  "type": "SharedSlice",
+  "name": "Divider",
+  "description": "Divider",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "backgroundColor": {
+          "type": "Color",
+          "config": {
+            "label": "Background Color",
+            "placeholder": ""
+          }
+        },
+        "thickness": {
+          "type": "Number",
+          "config": {
+            "label": "Thickness",
+            "placeholder": ""
+          }
+        },
+        "spaceAbove": {
+          "type": "Number",
+          "config": {
+            "label": "Space Above",
+            "placeholder": ""
+          }
+        },
+        "spaceBelow": {
+          "type": "Number",
+          "config": {
+            "label": "Space Below",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

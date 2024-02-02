@@ -1,0 +1,33 @@
+{
+  "id": "countdown",
+  "type": "SharedSlice",
+  "name": "Countdown",
+  "description": "Countdown",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "targetDate": {
+          "type": "Date",
+          "config": {
+            "label": "Target Date",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
