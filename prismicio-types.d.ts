@@ -79,6 +79,86 @@ export type HomepageDocument<Lang extends string = string> =
 export type AllDocumentTypes = HomepageDocument;
 
 /**
+ * Primary content in *AccordionImage → Primary*
+ */
+export interface AccordionImageSliceDefaultPrimary {
+  /**
+   * Title field in *AccordionImage → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: accordion_image.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+}
+
+/**
+ * Primary content in *AccordionImage → Items*
+ */
+export interface AccordionImageSliceDefaultItem {
+  /**
+   * ItemTitle field in *AccordionImage → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: accordion_image.items[].itemtitle
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  itemtitle: prismic.KeyTextField;
+
+  /**
+   * Content field in *AccordionImage → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: accordion_image.items[].content
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  content: prismic.RichTextField;
+
+  /**
+   * Image field in *AccordionImage → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: accordion_image.items[].image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+}
+
+/**
+ * Default variation for AccordionImage Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type AccordionImageSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<AccordionImageSliceDefaultPrimary>,
+  Simplify<AccordionImageSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *AccordionImage*
+ */
+type AccordionImageSliceVariation = AccordionImageSliceDefault;
+
+/**
+ * AccordionImage Shared Slice
+ *
+ * - **API ID**: `accordion_image`
+ * - **Description**: AccordionImage
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type AccordionImageSlice = prismic.SharedSlice<
+  "accordion_image",
+  AccordionImageSliceVariation
+>;
+
+/**
  * Primary content in *Countdown → Primary*
  */
 export interface CountdownSliceDefaultPrimary {
@@ -757,6 +837,11 @@ declare module "@prismicio/client" {
       HomepageDocumentData,
       HomepageDocumentDataSlicesSlice,
       AllDocumentTypes,
+      AccordionImageSlice,
+      AccordionImageSliceDefaultPrimary,
+      AccordionImageSliceDefaultItem,
+      AccordionImageSliceVariation,
+      AccordionImageSliceDefault,
       CountdownSlice,
       CountdownSliceDefaultPrimary,
       CountdownSliceVariation,

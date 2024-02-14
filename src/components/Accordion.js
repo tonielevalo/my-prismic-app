@@ -14,12 +14,12 @@ export default function AccordionUsage({title, items}) {
   return (
     <Container>
       <Box>
-        <h3
+       <h3
           style={{
             textAlign: 'center',
             fontSize: '22px',
             paddingBottom: '2em'
-          }}
+          }} 
         >{title}</h3>
         {items.map((item, index) => {
           return (

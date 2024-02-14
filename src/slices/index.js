@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic";
 
 export const components = {
+  accordion_image: dynamic(() => import("./AccordionImage")),
   countdown: dynamic(() => import("./Countdown")),
   divider: dynamic(() => import("./Divider")),
   frequently_asked_questions: dynamic(
